@@ -53,51 +53,33 @@
       </div>
 
       <div id="content">
-        <div id="header">
-          <h1>Describe your VM</h1>
-        </div>
-
+        Hello <% fname %>. The VM you are requesting will be automatically placed in
+        the <% department %> folder. Please complete the form below to complete your request.
         <div id="getting-started">
-          <h1>Getting started</h1>
-                 
-          <ol>          
-            <li>
-              <form method="POST" action="/">
-              <h2>Enter your email: <input type="text" name="email"></h2>
-              <p>
-              Your email determines the location where the VM will reside. VMs
-              are categorized according to the department of its primary owner.
-              Special folders may be created for multi-user VMs, be sure to 
-              mention it under Special Instructions under your VM Description.
-              </p>
-            </li>
-
-            <li>
-              <h2>Describe your VM</h2>
-
-              <p>
-              <div id="description">
-              <ul>
-                <li>Does it need to be backed up?
-                <li>How much RAM, CPU, disk space required?
-                <li>32 bit or 64 bit?
-                <li>Do you need the ability to reboot your VM?
-              </ul>
-              </div>     
-              </p>
-            </li>
-
-            <li>
-                <h2>Wait for IT email with login credentials to the new VM</h2>
-
-                <p>
-                It may take 1-2 days or longer in some cases depending on availability
-                of computing resources, installation ISOs, or complexity of request.
-                </p>
-            </li>
-            <div id="begin-button"><input type="submit" value="Begin"></div>
-            </form>
-          </ol>
+          <form method="POST" action="/">
+          <h1>Quickstart</h1>
+          <table>
+          <tr><th>Pick an ISO</th><td>
+          <select>
+          <option>not in list</option>
+          <option>sample iso #1</option>
+          <option>sample iso #2</option>
+          </select>
+          </td></tr>
+          <tr><th>Number of CPUs</th><td><input type="text" name="cpu"></td></tr>
+          <tr><th>Amount of Memory (RAM)</th><td><input type="text" name="ram"></td></tr>
+          <tr><th>Amount of Storage (hard drive)</th><td><input type="text" name="disk"></td></tr>
+          </table>
+          <hr>
+          <table>
+          <tr><td><input type="radio" name="bit" value="32">32 bits</td>
+          <td><input type="radio" name="bit" value="64">64 bits</td></tr>
+          <tr><th>Operating System</th><td><input type="text" name="os"></td></tr>
+          <tr><th>flavor</th><td><input type="text" name="flavor"></td></tr>
+          <tr><th>service pack or version</th><td><input type="text" name="version"></td></tr>
+          
+          </table>
+          </form>        
         </div>
       </div>
-    </div>
+</div>

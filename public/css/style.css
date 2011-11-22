@@ -135,6 +135,15 @@ color: #333;
 color: #555;
 font-size: 13px;
 }
+#getting-started table {
+font-size:9px;
+color: #777;
+text-align:left;
+}
+#getting-started td {
+width: 50%;
+}
+
 #description li {
 color: #555;
 font-size: 13px;
