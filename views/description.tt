@@ -1,0 +1,103 @@
+  
+<!-- 
+    Credit goes to the Ruby on Rails team for this page 
+    has been heavily based on the default Rails page that is 
+    built with a scaffolded application.
+
+    Thanks a lot to them for their work.
+
+    See Ruby on Rails if you want a kickass framework in Ruby:
+    http://www.rubyonrails.org/
+-->
+
+<div id="page">
+      <div id="sidebar">
+        <ul id="sidebar-items">
+          <li>
+            <h3>Join the community</h3>
+            <ul class="links">
+
+              <li><a href="http://perldancer.org/">PerlDancer</a></li>
+              <li><a href="http://twitter.com/PerlDancer/">Official Twitter</a></li>
+              <li><a href="http://github.com/sukria/Dancer/">GitHub Community</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <h3>Browse the documentation</h3>
+
+            <ul class="links">
+              <li><a
+              href="http://search.cpan.org/dist/Dancer/lib/Dancer/Introduction.pod">Introduction</a></li>
+              <li><a href="http://search.cpan.org/dist/Dancer/lib/Dancer/Cookbook.pod">Cookbook</a></li>
+              <li><a href="http://search.cpan.org/dist/Dancer/lib/Dancer/Deployment.pod">Deployment Guide</a></li>
+              <li><a
+              href="http://search.cpan.org/dist/Dancer/lib/Dancer/Tutorial.pod"
+              title="a tutorial to build a small blog engine with Dancer">Tutorial</a></li>
+            </ul>
+          </li>
+
+          <li> 
+            <h3>Your application's environment</h3>
+
+            <ul>
+                <li>Location: <code>/home/jctong/scripts/Request-VM</code></li>
+                <li>Template engine: <code><% settings.template %></code></li>
+                <li>Logger: <code><% settings.logger %></code></li>
+                <li>Environment: <code><% settings.environment %></code></li>
+            </ul>
+
+          </li>
+        </ul>
+
+      </div>
+
+      <div id="content">
+        <div id="header">
+          <h1>Describe your VM</h1>
+        </div>
+
+        <div id="getting-started">
+          <h1>Getting started</h1>
+                 
+          <ol>          
+            <li>
+              <form method="POST" action="/">
+              <h2>Enter your email: <input type="text" name="email"></h2>
+              <p>
+              Your email determines the location where the VM will reside. VMs
+              are categorized according to the department of its primary owner.
+              Special folders may be created for multi-user VMs, be sure to 
+              mention it under Special Instructions under your VM Description.
+              </p>
+            </li>
+
+            <li>
+              <h2>Describe your VM</h2>
+
+              <p>
+              <div id="description">
+              <ul>
+                <li>Does it need to be backed up?
+                <li>How much RAM, CPU, disk space required?
+                <li>32 bit or 64 bit?
+                <li>Do you need the ability to reboot your VM?
+              </ul>
+              </div>     
+              </p>
+            </li>
+
+            <li>
+                <h2>Wait for IT email with login credentials to the new VM</h2>
+
+                <p>
+                It may take 1-2 days or longer in some cases depending on availability
+                of computing resources, installation ISOs, or complexity of request.
+                </p>
+            </li>
+            <div id="begin-button"><input type="submit" value="Begin"></div>
+            </form>
+          </ol>
+        </div>
+      </div>
+    </div>
