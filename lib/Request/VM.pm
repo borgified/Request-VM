@@ -8,7 +8,8 @@ get '/' => sub {
 };
 
 post '/' => sub {
-    template 'description';
+    my $dept = ADlookup($email);
+    template 'description',{fname => param('email')};
 };
 
 

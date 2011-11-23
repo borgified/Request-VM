@@ -92,7 +92,7 @@
           </table>
           <hr>
           <h3>Special Requests</h3>
-          <textarea name="special" onclick="this.select();" title="Unless otherwise specified, the OS will be installed with default settings. You may wish to fine tune certain items like what filesystem type to use (reiserfs, ext3, etc.) or whether you intend to put this VM in the DMZ for outside access.">Unless otherwise specified, the OS will be installed with default settings. You may wish to fine tune certain items like what filesystem type to use (reiserfs, ext3, etc.) or whether you intend to put this VM in the DMZ for outside access.</textarea>
+          <textarea name="special" onclick="this.select();" title="Unless otherwise specified, the OS will be installed with default settings. You may wish to fine tune certain items like what filesystem type to use (reiserfs, ext3, etc.) or whether you intend to put this VM in the DMZ for outside access.">Unless otherwise specified, the OS will be installed with default settings. You may wish to fine tune certain items like what filesystem type to use (reiserfs, ext3, etc.) or whether you intend to put this VM on the DMZ for outside access.</textarea>
           </form>        
         </div>
       </div>
