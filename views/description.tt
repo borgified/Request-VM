@@ -51,6 +51,16 @@
         </ul>
 
       </div>
+      
+    <script type="text/javascript">
+    function go(myvar){
+      if(myvar == "windows"){
+        document.getElementById('msdn').style.visibility="visible";
+      }else{
+        document.getElementById('msdn').style.visibility="collapse";
+      }
+    }
+    </script>
 
       <div id="content">
         Hello <% fname %>. The VM you are requesting will be automatically placed in
@@ -60,12 +70,14 @@
           <h1>Quickstart</h1>
           <table>
           <tr><th>Pick an ISO</th><td>
-          <select>
-          <option>not in list</option>
-          <option>sample iso #1</option>
-          <option>sample iso #2</option>
+          <select onchange="go(this.value);">
+          <option value="none">not in list</option>
+          <option value="linux">sample iso #1</option>
+          <option value="linux">sample iso #2</option>
+          <option value="windows">windows sample iso #2</option>
           </select>
           </td></tr>
+          <tr id="msdn" style="visibility:collapse;"><th>MSDN key</th><td><input type="text" name="msdn"></td></tr>
           <tr><th>Number of CPUs</th><td><input type="text" name="cpu"></td></tr>
           <tr><th>Amount of Memory (RAM)</th><td><input type="text" name="ram"></td></tr>
           <tr><th>Amount of Storage (hard drive)</th><td><input type="text" name="disk"></td></tr>
@@ -77,8 +89,10 @@
           <tr><th>Operating System</th><td><input type="text" name="os"></td></tr>
           <tr><th>flavor</th><td><input type="text" name="flavor"></td></tr>
           <tr><th>service pack or version</th><td><input type="text" name="version"></td></tr>
-          
           </table>
+          <hr>
+          <h3>Special Requests</h3>
+          <textarea name="special" onclick="this.select();" title="Unless otherwise specified, the OS will be installed with default settings. You may wish to fine tune certain items like what filesystem type to use (reiserfs, ext3, etc.) or whether you intend to put this VM in the DMZ for outside access.">Unless otherwise specified, the OS will be installed with default settings. You may wish to fine tune certain items like what filesystem type to use (reiserfs, ext3, etc.) or whether you intend to put this VM in the DMZ for outside access.</textarea>
           </form>        
         </div>
       </div>
